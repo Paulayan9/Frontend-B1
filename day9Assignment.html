@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=74213, initial-scale=1.0" />
+    <title>Taking input from user</title>
+    <script type="text/javascript">
+      // function p() {
+      //   var number = document.getElementById("number").value;
+      //   let cube = number * number * number;
+      //   alert(number ** 3);
+      //   document.write("the cube is ", +(number ** 3), "<br/>");
+      //   alert(number ** 2);
+      //   document.write("the square is", +(number ** 2), "<br/>");
+      // }
+
+      document.write(
+        "<table> <tr> <th>Number</th> <th>Square</th> <th>Cube</th> </tr>"
+      );
+      for (var n = 0; n <= 10; n++) {
+        document.write(
+          "<tr><td>" +
+            n +
+            "</td><td>" +
+            n * n +
+            "</td><td>" +
+            n * n * n +
+            "</td></tr>"
+        );
+      }
+      document.write("</table>");
+    </script>
+  </head>
+  <body>
+    <!-- <form>
+      enter number:<input type="text" id="number " name="number" /> <br /><br />
+      <input type="button" value="submit" onclick="p()" />
+    </form> -->
+  </body>
+</html>

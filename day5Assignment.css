@@ -1,0 +1,12 @@
+body {
+  background-image: url("background/100.jpg");
+  object-fit: cover;
+}
+li {
+  color: aqua;
+  padding: 14px;
+}
+h1,
+h3 {
+  color: antiquewhite;
+}

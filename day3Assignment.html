@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+   <!-- <style type="text/css">
+       .indent{
+           padding-left: 1.5em;
+       }
+    </style> -->
+</head>
+<body>
+   <center> <h1>Visvesvaraya Technological University</h1></center>
+   <center><h2>Admission Form for Batch 2021 - 2022</h2></center>
+   <hr>
+
+   <marquee ><i>Last Date : 30th August, Enroll your seat and make your dream to a further step.Best wishes!!!</i></marquee>
+   <hr>
+   <form action="backend.php">
+       <h3>Admission Form</h3>
+       <p>Enter Your Admission Details Below:</p>
+       <label for="name"><b>Name:</b></label>
+       <!-- <br>
+       <div>
+           <input type="text" placeholder="Enter your Name" id="name"> 
+       </div> -->
+       <br><br><div style="display: flex;">
+        <form>
+            <input type="text" placeholder="First Name" id="name" required>
+        </form>
+        &nbsp;
+        <form>
+            <input type="text" placeholder="Middle Name" id="name">
+        </form>
+        &nbsp;
+        <form>
+            <input type="text" placeholder="Last Name" id="name">
+        </form>
+
+       </div> <br><br>
+
+       <div style="display: flex;">
+    <div>
+
+    <label for="birthday"><b>Birth of Date:</b></label><br>
+    <br><div>
+     <input type="date" name="myDate" >
+    </div><br>
+    
+</div>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+      <div>
+        <label for="gender"><b>Gender:</b></label><br><br>
+        <input type="radio" name="gender" value="Male">Male <br>
+        <input type="radio" name="gender" value="Female">Female <br>
+        <input type="radio" name="gender" value="Other">Other
+
+
+      </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <div>
+          <label for="Maritial Status"><b>Maritial Status:</b></label><br><br>
+
+          <select name="status" id="Maritial Status">
+              <option value="Please">Please Select</option>
+              <option value="S">Single</option>
+              <option value="M">Married</option>
+              <option value="D">Divorced</option>
+              <option value="W">Widow</option>
+              <option value="S">Separated</option>
+          </select>
+      </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <div>
+          <label for="Region"><b>Region:</b></label><br><br>
+
+          <select name="country" id="Region">
+              <option value="ind">India</option>
+              <option value="Ban">Bangladesh</option>
+              <option value="Aus">Austrailia</option>
+              <option value="Jap">Japan</option>
+              <option value="Ame">America</option>
+          </select>
+      </div>
+</div>
+     
+        <br><br><div>
+            <label for="Address"> <b> Address:</b> </label><br><br>
+            <br><textarea name="myText" id="" cols="90" rows="5" ></textarea>
+        </div>
+       
+        <br><br><div>
+            <label for="Address"> <b> Correspond Address:</b></label><br><br>
+            <br><textarea name="myText" id="" cols="90" rows="5"></textarea>
+        </div>
+       <br><br><div style="display: flex;">
+        <div>
+
+            <label for="city"><b>City:</b></label><br><br>
+            <input type="text" id="city" >
+        </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <div>
+
+            <label for="Pst"><b>Postal/Zip Code:</b></label><br><br>
+            <input type="number">
+        </div>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <div>
+
+            <label for="NL"><b>Native Language:</b></label><br><br>
+            <select name="Native" id="NL">
+                <option value="En">English</option>
+                <option value="Hin">Hindi</option>
+                <option value="Ka">Kannada</option>
+                <option value="Sp">Spanish</option>
+                <option value="Tu">Turkish</option>
+                <option value="Be">Bengali</option>
+                <option value="Po">Polish</option>
+                <option value="Ch">Chinese</option>
+                <option value="Du">Dutch</option>
+                <option value="Ar">Arabic</option>
+                <option value="Por">Portuguese</option>
+                <option value="Rus">Russian</option>
+            </select>
+        </div>
+        
+       </div><br><br>
+       <hr>
+       
+       <label for="application"><b>This application is for enrollment as:</b></label><br><br>
+      <div style="display: flex;">
+        <input type="radio" name="application" value="Freshman(First time in college)">Freshman(First time in college) &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        <input type="radio" name="application" value="2nd Bachelor's Degree">2nd Bachelor's Degree <br>
+        </div><br>
+
+        <div style="display: flex;">
+        <input type="radio" name="application" value="Undergraduate Transfer">Undergraduate Transfer  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+        <input type="radio" name="application" value="Former Student Returning(FSR)">Former Student Returning(FSR) <br>
+
+
+      </div><br><br>
+      <div>
+          <label for="campus">What is your planned major?</label><br><br>
+          <input type="text"  id="campus" maxlength="100" size="100">
+      </div><br><br>
+
+           <div style="display: flex;">
+               
+            <div>
+                <label for="seek"><b>For which campus do you seek admission ?</b></label><br><br>
+      
+                <select id="seek">
+                    <option value="Please select">Please select</option>
+                    <option value="campus1">campus 1</option>
+                    <option value="campus2">campus 2</option>
+                    <option value="campus3">campus 3</option>
+                    <option value="campus4">campus 4</option>
+                </select>
+            </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <div>
+                <label for="ty"><b>For which term do you seek admission ?</b></label><br><br>
+      
+                <select name="country" id="ty">
+                    <option value="Please select">Please select</option>
+                    <option value="Fall term">Fall term</option>
+                    <option value="Spring term">Spring term</option>
+                    <option value="Summer term">Summer term</option>
+                    
+                </select>
+            </div>
+
+           </div><br><br>
+
+           <label for="Please"><b> Please indicate your housing preference : </b></label><br><br>
+          
+           <div style="display: flex;">
+            <input type="radio" name="campus selection" value="On-campus"> On-campus &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+            <input type="radio" name="campus selection" value="Off-campus">Off-campus <br>
+    
+    
+          </div><br><br>
+          <hr><br><br>
+          <p><i> If your records have been expunged pursuant to applicable law, you are not required to answer yes to the following questions. If you are unsure whether to answer yes, we strongly suggest that you answer yes and fully disclose all incidents to avoid any risk of disciplinary action or revocation of your offer of admission. </i></p>
+          <br>
+          <div style="display: flex;" >
+
+              <label for="disciplinary" class="indent"  > Are you currently or have you ever been charged <br> with or subject to disciplinary action for scholastic <br> or any other type of misconduct at any educational <br> institution?</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+              <label for="if">If yes please explain in detail</label>
+          </div>
+          <div><br>
+            <div style="display: flex;">
+                <input type="radio" name="disciplinary" value="On-campus"> Yes 
+                <input type="radio" name="disciplinary" value="Off-campus">No <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+                 
+        <br><br>
+            <br><textarea name="myText" id="" cols="45" rows="15"></textarea>
+              </div><br><br>
+
+          </div>
+          <hr><br>
+          <h4>High School Information</h4>
+          <div style="display: flex;">
+            <label for="High">High School Name</label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 
+            <label for="Board of Education">Board of Education</label>
+            <br><br>
+
+          </div>
+          
+          <div style="display: flex;">
+            
+            <input type="text"  id="High" size="45">  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+            <input type="text" id="Board of Education" size="46"> <br>
+    
+    
+          </div><br><br>
+          <div style="display: flex;">
+            <label for="graduation">Graduation Date</label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 
+            <label for="RegNo">Registration Id</label>
+          </div>
+       <br>
+       <div style="display: flex;">
+      
+     <input type="date" name="graduation" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+     <input type="number"  id="RegNo">
+
+       </div><br><br>
+       <div>
+
+           <label for="ad1">High School Address</label><br><br>
+           <input type="text"  id="ad1" size="45"><br><br>
+           <label for="ad2">Street Address</label><br><br>
+           <input type="text"  id="ad2" size="45"><br><br>
+           <label for="ad3">Address Line2</label><br><br>
+           <input type="text"  id="ad3" size="45">
+       </div><br><br>
+
+    </div>
+    <div style="display: flex;">
+      <label for="city">City</label>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+           
+      <label for="state">State/Province/Region</label>
+    </div> <br>
+    <div style="display: flex;">
+        <input type="text"  id="city">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+    
+            <select>
+                <option value="ind">India</option>
+                <option value="Ban">Bangladesh</option>
+                <option value="Aus">Austrailia</option>
+                <option value="Jap">Japan</option>
+                <option value="Ame">America</option>
+            </select>
+        
+
+    </div><br><br><hr>
+       
+          
+        <input type="submit" value="Submit Now">
+        <input type="reset" value="Reset">
+        
+      </form>
+
+
+
+    
+</body>
+</html>
